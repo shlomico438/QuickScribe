@@ -16,7 +16,7 @@ jobs:
       - name: Check secrets presence
         run: |
           if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ]; then
-            echo "USERNAME SECRET IS EMPTY"
+            echo "USERNAME SECRET IS EMPTY "
             exit 1
           else
             echo "USERNAME SECRET EXISTS"

@@ -12,6 +12,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Check secrets presence
+        run: |
+          if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ]; then
+            echo "USERNAME SECRET IS EMPTY"
+            exit 1
+          else
+            echo "USERNAME SECRET EXISTS"
+          fi
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3

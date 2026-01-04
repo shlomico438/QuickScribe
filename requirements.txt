@@ -1,0 +1,7 @@
+scipy
+tqdm
+pandas
+requests
+python-docx
+nltk
+matplotlib

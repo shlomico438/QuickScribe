@@ -1,0 +1,3 @@
+echo Running Docker build...
+docker build -t whisperx-container . 
+

@@ -1,7 +1,12 @@
 scipy
 tqdm
 pandas
-requests
-python-docx
+requests~=2.32.5
+python-docx~=1.2.0
 nltk
 matplotlib
+Flask~=3.1.2
+torch~=2.8.0
+omegaconf~=2.3.0
+whisperx~=3.7.4
+faster-whisper~=1.2.1
